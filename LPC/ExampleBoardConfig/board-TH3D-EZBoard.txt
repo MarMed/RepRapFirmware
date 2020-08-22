@@ -18,8 +18,8 @@ atx.powerPin = NoPin
 atx.powerPinInverted = false
 //sdcard needs work
 sdCard.internal.spiFrequencyHz = 25000000
-sdCard.external.csPin = 0.6
-sdCard.external.cardDetectPin = 0.6
+sdCard.external.csPin = NoPin
+sdCard.external.cardDetectPin = NoPin
 sdCard.external.spiFrequencyHz = 4000000
 sdCard.external.spiChannel = 255
 softwareSPI.pins = { NoPin NoPin NoPin }
