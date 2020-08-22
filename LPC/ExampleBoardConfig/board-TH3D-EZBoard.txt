@@ -1,0 +1,28 @@
+//TH3D EZBoard
+lpc.board = generic
+leds.diagnostic = NoPin
+//X Y Z E0 E1
+stepper.enablePins = { 1.17 1.9 1.14 1.8 4.29 }
+stepper.stepPins = { 2.0 2.1 2.2 2.3 2.8 }
+stepper.directionPins = { 1.16 1.10 1.15 1.4 2.13 }
+stepper.digipotFactor = 0.00
+//TMC Uart RX?
+stepper.TmcUartPins = { 0.4 E.1 B.5 G.10 D.4 C.12 }
+stepper.numSmartDrivers = 4
+stepper.TmcDiagPins = { NoPin NoPin NoPin NoPin NoPin }
+//Bed E0 E1
+heat.tempSensePins = { 0.24 0.2 0.25 }
+heat.spiTempSensorCSPins = { NoPin NoPin }
+heat.spiTempSensorChannel = 0
+atx.powerPin = NoPin
+atx.powerPinInverted = false
+//sdcard needs work
+sdCard.internal.spiFrequencyHz = 25000000
+sdCard.external.csPin = 0.6
+sdCard.external.cardDetectPin = 0.6
+sdCard.external.spiFrequencyHz = 4000000
+sdCard.external.spiChannel = 255
+softwareSPI.pins = { NoPin NoPin NoPin }
+sbc.lpcTfrReadyPin = 0.18
+serial.aux.rxTxPins = { 0.15 0.16  }
+adc.prefilter.enable = true
