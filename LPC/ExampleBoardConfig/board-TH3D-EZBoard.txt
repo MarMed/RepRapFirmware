@@ -7,7 +7,7 @@ stepper.stepPins = { 2.0 2.1 2.2 2.3 2.8 }
 stepper.directionPins = { 1.16 1.10 1.15 1.4 2.13 }
 stepper.digipotFactor = 0.00
 //TMC Uart RX?
-stepper.TmcUartPins = { 0.4 E.1 B.5 G.10 D.4 C.12 }
+stepper.TmcUartPins = { 0.4 0.10 0.19 0.22 }
 stepper.numSmartDrivers = 4
 stepper.TmcDiagPins = { NoPin NoPin NoPin NoPin NoPin }
 //Bed E0 E1
