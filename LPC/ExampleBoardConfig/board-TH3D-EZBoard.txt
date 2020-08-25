@@ -16,13 +16,14 @@ heat.spiTempSensorCSPins = { NoPin NoPin }
 heat.spiTempSensorChannel = 0
 atx.powerPin = NoPin
 atx.powerPinInverted = false
-//sdcard needs work
 sdCard.internal.spiFrequencyHz = 25000000
 sdCard.external.csPin = NoPin
 sdCard.external.cardDetectPin = NoPin
 sdCard.external.spiFrequencyHz = 4000000
 sdCard.external.spiChannel = 255
 softwareSPI.pins = { NoPin NoPin NoPin }
-sbc.lpcTfrReadyPin = 0.18
-serial.aux.rxTxPins = { 0.15 0.16  }
+//EZBoard does not have 0.17, must find substitute.
+SSP0.pins = {0.15,0.17,0.18,0.16}
+sbc.lpcTfrReadyPin = 1.30
+serial.aux.rxTxPins = { NoPin NoPin  }
 adc.prefilter.enable = true
